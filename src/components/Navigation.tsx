@@ -10,9 +10,9 @@ const Navigation = () => {
 
   const navItems = [
     { name: "Home", href: "#hero" },
+    { name: "Posts", href: "#posts" },
     { name: "About", href: "#about" },
     { name: "Rules", href: "#rules" },
-    { name: "Posts", href: "#posts" },
     { name: "Location", href: "#location" },
     { name: "Prizes", href: "#prizes" },
   ];

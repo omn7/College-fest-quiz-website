@@ -13,9 +13,9 @@ const Index = () => {
     <div className="min-h-screen bg-quiz-dark text-white overflow-x-hidden">
       <Navigation />
       <Hero />
+      <Posts />
       <About />
       <Rules />
-      <Posts />
       <Location />
       <Prizes />
       <Footer />

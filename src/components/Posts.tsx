@@ -12,7 +12,8 @@ const posts = [
     author: "Quiz Committee",
     date: "September 25, 2023",
     comments: 12,
-    category: "Announcements"
+    category: "Announcements",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ const posts = [
     author: "Team Quizzards",
     date: "September 20, 2023",
     comments: 8,
-    category: "Tips"
+    category: "Tips",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
   },
   {
     id: 3,
@@ -30,13 +32,14 @@ const posts = [
     author: "Entertainment Team",
     date: "September 15, 2023",
     comments: 5,
-    category: "Events"
+    category: "Events",
+    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
   },
 ];
 
 const Posts = () => {
   return (
-    <section id="posts" className="py-16 md:py-24 bg-quiz-background">
+    <section id="posts" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">LATEST <span className="gradient-text">UPDATES</span></h2>
@@ -46,6 +49,13 @@ const Posts = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {posts.map((post) => (
             <Card key={post.id} className="bg-quiz-dark border-quiz-muted hover:border-quiz-accent transition-all duration-300">
+              <div className="relative h-48 w-full overflow-hidden rounded-t-lg">
+                <img 
+                  src={post.image} 
+                  alt={post.title}
+                  className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
+                />
+              </div>
               <CardHeader>
                 <div className="flex justify-between items-start mb-2">
                   <Badge className="bg-quiz-accent hover:bg-quiz-highlight">{post.category}</Badge>
@@ -57,9 +67,6 @@ const Posts = () => {
                 <CardTitle className="text-xl font-display tracking-wide">{post.title}</CardTitle>
                 <CardDescription className="text-gray-300">{post.excerpt}</CardDescription>
               </CardHeader>
-              <CardContent>
-                {/* Content can be expanded in the future */}
-              </CardContent>
               <CardFooter className="flex justify-between text-sm text-gray-400 pt-4 border-t border-quiz-muted">
                 <div className="flex items-center">
                   <User className="h-3 w-3 mr-1" />

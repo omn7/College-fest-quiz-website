@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,25 +21,27 @@ const Navigation = () => {
       <div className="container mx-auto px-4 md:px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <h1 className="text-2xl font-display font-bold gradient-text">QUIZ MASTERS</h1>
+            <h1 className="text-xl sm:text-2xl font-display font-bold gradient-text">QUIZ MASTERS</h1>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
             {navItems.map((item) => (
               <a 
                 key={item.name} 
                 href={item.href}
-                className="text-gray-300 hover:text-quiz-accent transition-colors"
+                className="text-gray-300 hover:text-quiz-accent transition-colors text-sm lg:text-base"
               >
                 {item.name}
               </a>
             ))}
-            <Button className="quiz-button">Register Now</Button>
+            <ThemeToggle />
+            <Button className="quiz-button text-sm">Register Now</Button>
           </div>
 
           {/* Mobile Navigation Toggle */}
-          <div className="md:hidden">
+          <div className="flex items-center space-x-2 md:hidden">
+            <ThemeToggle />
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X /> : <Menu />}
             </Button>
@@ -58,7 +61,7 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button className="quiz-button">Register Now</Button>
+            <Button className="quiz-button w-full">Register Now</Button>
           </div>
         )}
       </div>

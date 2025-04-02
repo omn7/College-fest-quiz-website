@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Instagram, Twitter, Facebook, Download } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
@@ -41,7 +40,7 @@ const Footer = () => {
                 <Twitter className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-quiz-accent">
-                <GitHub className="h-5 w-5" />
+                <Github className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -111,4 +110,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

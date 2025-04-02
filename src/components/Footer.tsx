@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { GitHub, Instagram, Twitter, Facebook, Download } from "lucide-react";
+import { Github, Instagram, Twitter, Facebook, Download } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 const Footer = () => {
@@ -111,3 +111,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

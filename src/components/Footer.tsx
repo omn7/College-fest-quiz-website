@@ -26,7 +26,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 md:mb-12">
           <div>
-            <h3 className="text-xl font-display font-bold mb-4 gradient-text">QUIZ MASTERS</h3>
+            <h3 className="text-xl font-display font-bold mb-4 gradient-text">QUIZZERS</h3>
             <p className="text-gray-400 mb-4 text-sm md:text-base">
               The ultimate test of knowledge, strategy, and quick thinking for college students.
             </p>
@@ -91,18 +91,18 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-3 md:mb-4">Contact Us</h3>
             <address className="text-gray-400 not-italic text-sm md:text-base">
-              <p>Main College Auditorium</p>
-              <p>123 College Street</p>
-              <p>Your City, State 12345</p>
-              <p className="mt-2">Email: quiz@college.edu</p>
-              <p>Phone: (123) 456-7890</p>
+              <p>Bharati Vidyapeeth's </p>
+              <p>College of Engineering</p>
+              <p> Lavale Pune</p>
+              <p className="mt-2">Email: dev.om@outlook.com</p>
+              <p>Phone: 8767113994</p>
             </address>
           </div>
         </div>
         
         <div className="border-t border-quiz-muted pt-4 md:pt-8">
           <p className="text-center text-xs md:text-sm text-gray-500">
-            © {new Date().getFullYear()} Quiz Masters Competition. All rights reserved.
+            © {new Date().getFullYear()} Team CodeCrew ❤️. All rights reserved.
           </p>
         </div>
       </div>

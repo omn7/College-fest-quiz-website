@@ -29,11 +29,11 @@ const Hero = () => {
           <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
             <div className="inline-block bg-quiz-accent/20 px-4 py-1.5 rounded-full">
               <span className="text-sm font-medium text-quiz-accent">
-                October 15-16, 2023
+                Date Coming soon....
               </span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
-              COLLEGE <span className="gradient-text">QUIZ</span> CHAMPIONSHIP
+              BVCOEL <span className="gradient-text">QUIZ</span> CHAMPIONSHIP
             </h1>
             <p className="text-base sm:text-lg text-gray-300 max-w-md mx-auto md:mx-0">
               Test your knowledge, compete with the brightest minds, and win amazing prizes at our annual quiz competition.
@@ -41,7 +41,7 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <Button className="quiz-button group w-full sm:w-auto" asChild>
                 <a href="#posts">
-                  Latest Posts <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  Register Now <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>
               <Button className="quiz-button-outline flex items-center w-full sm:w-auto" onClick={handleDownloadRules}>
@@ -62,7 +62,7 @@ const Hero = () => {
                     </div>
                     <div className="ml-3">
                       <p className="font-medium">Registration Deadline</p>
-                      <p className="text-sm text-gray-400">October 10, 2023</p>
+                      <p className="text-sm text-gray-400">April 16, 2024</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -70,8 +70,8 @@ const Hero = () => {
                       <span className="text-xs text-white">2</span>
                     </div>
                     <div className="ml-3">
-                      <p className="font-medium">Preliminary Round</p>
-                      <p className="text-sm text-gray-400">October 15, 2023</p>
+                      <p className="font-medium">Quiz Date</p>
+                      <p className="text-sm text-gray-400">Coming soon..</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -79,8 +79,8 @@ const Hero = () => {
                       <span className="text-xs text-white">3</span>
                     </div>
                     <div className="ml-3">
-                      <p className="font-medium">Final Round & Prize Distribution</p>
-                      <p className="text-sm text-gray-400">October 16, 2023</p>
+                      <p className="font-medium">Prize Distribution</p>
+                      <p className="text-sm text-gray-400">Coming soon...</p>
                     </div>
                   </li>
                 </ul>

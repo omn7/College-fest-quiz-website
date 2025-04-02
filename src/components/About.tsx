@@ -11,7 +11,7 @@ const About = () => {
     {
       icon: <Users className="h-8 w-8 text-quiz-accent" />,
       title: "Team Participation",
-      description: "Form teams of 3-4 members and collaborate to solve complex problems."
+      description: "Form teams of 1-2 members and collaborate to solve complex problems."
     },
     {
       icon: <Trophy className="h-8 w-8 text-quiz-accent" />,
@@ -21,7 +21,7 @@ const About = () => {
     {
       icon: <Award className="h-8 w-8 text-quiz-accent" />,
       title: "Valuable Prizes",
-      description: "Win certificates, trophies, and exciting cash prizes worth ₹25,000."
+      description: "Win certificates, trophies, and exciting prizes"
     }
   ];
 
@@ -31,7 +31,7 @@ const About = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">ABOUT THE <span className="gradient-text">COMPETITION</span></h2>
           <p className="text-lg text-gray-300 max-w-xl mx-auto">
-            Our annual quiz competition brings together the most knowledgeable students for an intellectual showdown.
+            Our annual Saptarang Quiz competition brings together the most knowledgeable students for an intellectual showdown.
           </p>
         </div>
 

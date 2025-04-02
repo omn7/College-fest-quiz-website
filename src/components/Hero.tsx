@@ -1,25 +1,21 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 const Hero = () => {
   const handleDownloadRules = () => {
-    // In a real implementation, this would be a link to your PDF file
     toast({
       title: "Downloading Rule Book",
       description: "Your download will begin shortly",
     });
     
-    // Simulate download (in real app, replace with actual file URL)
-    setTimeout(() => {
-      const link = document.createElement('a');
-      link.href = '#'; // Replace with actual PDF URL
-      link.download = 'quiz_rulebook.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }, 500);
+    // Create a link to the PDF file in the public folder
+    const link = document.createElement('a');
+    link.href = '/rulebook.pdf'; // Path to the PDF in public folder
+    link.download = 'BVCOEL_QUIZ_RULEBOOK.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (

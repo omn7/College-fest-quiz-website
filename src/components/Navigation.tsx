@@ -29,7 +29,7 @@ const Navigation = () => {
             <img 
               src="https://bvcoe.bharatividyapeeth.edu/media/images/bvcoe_logo_3.png" 
               alt="BVCOE Logo" 
-              className="h-8 w-auto object-contain md:hidden"
+              className="h-10 w-auto object-contain md:hidden"
             />
           </div>
 

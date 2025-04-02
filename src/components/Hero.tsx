@@ -11,7 +11,7 @@ const Hero = () => {
     
     // Create a link to the PDF file in the public folder
     const link = document.createElement('a');
-    link.href = '/rulebook.pdf'; // Path to the PDF in public folder
+    link.href = '/QUIZZERS rule book..2-3.pdf'; // Path to the PDF in public folder
     link.download = 'BVCOEL_QUIZ_RULEBOOK.pdf';
     document.body.appendChild(link);
     link.click();

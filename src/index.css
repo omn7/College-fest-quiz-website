@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&family=Russo+One&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -110,6 +110,10 @@
   .quiz-button-outline {
     @apply border border-quiz-accent text-quiz-accent hover:bg-quiz-accent/10 font-medium rounded-md px-6 py-3 transition-all;
   }
+
+  .quiz-title {
+    @apply font-quiz text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wider;
+  }
 }
 
 .light .bg-quiz-dark {
@@ -135,3 +139,13 @@
 .light .text-gray-400 {
   @apply text-gray-500;
 }
+
+/* Quiz elements styling */
+.quiz-question-container {
+  @apply relative overflow-hidden rounded-xl border border-quiz-accent p-6 md:p-8;
+}
+
+.quiz-question-number {
+  @apply absolute -top-6 -left-6 bg-quiz-accent text-white h-16 w-16 flex items-center justify-center rounded-full text-xl font-quiz transform rotate-12;
+}
+

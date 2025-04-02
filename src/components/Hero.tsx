@@ -23,39 +23,39 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="pt-24 pb-16 md:pt-32 md:pb-24">
+    <section id="hero" className="pt-20 pb-12 md:pt-32 md:pb-24">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 space-y-6 text-center md:text-left">
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
             <div className="inline-block bg-quiz-accent/20 px-4 py-1.5 rounded-full">
               <span className="text-sm font-medium text-quiz-accent">
                 October 15-16, 2023
               </span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-display font-bold">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
               COLLEGE <span className="gradient-text">QUIZ</span> CHAMPIONSHIP
             </h1>
-            <p className="text-lg text-gray-300 max-w-md mx-auto md:mx-0">
+            <p className="text-base sm:text-lg text-gray-300 max-w-md mx-auto md:mx-0">
               Test your knowledge, compete with the brightest minds, and win amazing prizes at our annual quiz competition.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Button className="quiz-button group" asChild>
-                <a href="#registration">
-                  Register Now <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+              <Button className="quiz-button group w-full sm:w-auto" asChild>
+                <a href="#posts">
+                  Latest Posts <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>
-              <Button className="quiz-button-outline flex items-center" onClick={handleDownloadRules}>
+              <Button className="quiz-button-outline flex items-center w-full sm:w-auto" onClick={handleDownloadRules}>
                 <Download className="mr-2 h-4 w-4" /> Rule Book
               </Button>
             </div>
           </div>
 
-          <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center">
-            <div className="relative">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-quiz-accent to-quiz-highlight rounded-lg opacity-75 animate-pulse-glow blur-lg"></div>
-              <div className="relative bg-quiz-background border border-quiz-accent rounded-lg p-6">
-                <div className="text-3xl font-display font-bold mb-4 gradient-text">TIMELINE</div>
-                <ul className="space-y-4">
+          <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
+            <div className="relative w-full max-w-md">
+              <div className="absolute -inset-1 bg-gradient-to-r from-quiz-accent to-quiz-highlight rounded-lg opacity-75 animate-pulse-glow blur-lg"></div>
+              <div className="relative bg-quiz-background border border-quiz-accent rounded-lg p-4 sm:p-6">
+                <div className="text-2xl sm:text-3xl font-display font-bold mb-4 gradient-text">TIMELINE</div>
+                <ul className="space-y-3 sm:space-y-4">
                   <li className="flex items-start">
                     <div className="h-6 w-6 rounded-full bg-quiz-accent flex items-center justify-center mt-1">
                       <span className="text-xs text-white">1</span>

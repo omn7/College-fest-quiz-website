@@ -12,6 +12,7 @@ const Navigation = () => {
     { name: "Home", href: "#hero" },
     { name: "About", href: "#about" },
     { name: "Rules", href: "#rules" },
+    { name: "Posts", href: "#posts" },
     { name: "Location", href: "#location" },
     { name: "Prizes", href: "#prizes" },
   ];
@@ -25,7 +26,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
+          <div className="hidden md:flex items-center space-x-3 lg:space-x-6">
             {navItems.map((item) => (
               <a 
                 key={item.name} 
@@ -36,7 +37,6 @@ const Navigation = () => {
               </a>
             ))}
             <ThemeToggle />
-            <Button className="quiz-button text-sm">Register Now</Button>
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -61,7 +61,6 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button className="quiz-button w-full">Register Now</Button>
           </div>
         )}
       </div>

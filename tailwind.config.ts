@@ -114,7 +114,8 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
-				display: ['Orbitron', 'sans-serif']
+				display: ['Orbitron', 'sans-serif'],
+				quiz: ['Russo One', 'sans-serif']
 			},
 			screens: {
 				'xs': '480px',

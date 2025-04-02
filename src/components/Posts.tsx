@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 // Sample post data - in a real app, this would come from an API
@@ -6,17 +5,17 @@ const posts = [
   {
     id: 1,
     title: "Quiz Championship Finals Announced",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    image: "/b1.png"
   },
   {
     id: 2,
     title: "Preparation Tips from Last Year's Winners",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    image: "/b2.png"
   },
   {
     id: 3,
     title: "Special Round: Pop Culture Quiz",
-    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+    image: "/b3.png"
   },
 ];
 
@@ -46,11 +45,14 @@ const Posts = () => {
               className="relative overflow-hidden rounded-lg cursor-pointer hover:shadow-lg transition-all duration-300 h-64"
               onClick={() => openImage(index)}
             >
-              <img 
-                src={post.image} 
-                alt={post.title}
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-              />
+              <div className="relative w-full h-64 sm:h-80 overflow-hidden rounded-lg">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <p className="text-white p-4 font-medium">{post.title}</p>
               </div>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0F172A"/>
+  
+  <!-- Gradient Overlay -->
+  <rect width="1200" height="630" fill="url(#gradient)"/>
+  
+  <!-- Content Container -->
+  <g transform="translate(100, 100)">
+    <!-- BVCOE Logo -->
+    <image href="/favicon1.png" width="200" height="200" x="400" y="50"/>
+    
+    <!-- Title -->
+    <text x="600" y="350" text-anchor="middle" fill="white" font-family="Arial" font-size="48" font-weight="bold">
+      BVCOEL QUIZZER
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="600" y="420" text-anchor="middle" fill="#94A3B8" font-family="Arial" font-size="24">
+      Annual Technical Quiz Competition
+    </text>
+    
+    <!-- Description -->
+    <text x="600" y="480" text-anchor="middle" fill="#94A3B8" font-family="Arial" font-size="20" max-width="800">
+      Test your knowledge, compete with the best, and win exciting prizes
+    </text>
+  </g>
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+</svg> 

@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&family=Russo+One&display=swap');
 
 @tailwind base;
@@ -8,28 +7,28 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card-foreground: 222.2 84% 4.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
@@ -96,11 +95,11 @@
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-quiz-accent to-quiz-highlight bg-clip-text text-transparent;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-quiz-accent to-quiz-highlight;
   }
   
   .quiz-card {
-    @apply bg-background border border-input rounded-lg p-6 transition-all hover:border-quiz-accent;
+    @apply bg-quiz-dark/50 border border-quiz-accent/20 rounded-lg p-6 transition-all duration-300 hover:border-quiz-accent/40 hover:shadow-lg hover:shadow-quiz-accent/10;
   }
   
   .quiz-button {
@@ -147,5 +146,21 @@
 
 .quiz-question-number {
   @apply absolute -top-6 -left-6 bg-quiz-accent text-white h-16 w-16 flex items-center justify-center rounded-full text-xl font-quiz transform rotate-12;
+}
+
+/* Animation for coming soon toast */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
 }
 

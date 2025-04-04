@@ -90,9 +90,9 @@ const Location = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold mb-2">Event Coordinator</h4>
-                  <p className="text-sm text-gray-400">Snidhya Vyas</p>
+                  <p className="text-sm text-gray-400">Saanidhya Vyas</p>
                   <p className="text-sm text-gray-400">+91 9256319788</p>
-                  <p className="text-sm text-gray-400">quiz@bvcoe.edu</p>
+                  <p className="text-sm text-gray-400">sannidhya06vyas@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@ const Location = () => {
                   <h4 className="text-lg font-bold mb-2">General Enquiry</h4>
                   <p className="text-sm text-gray-400">Shivam Murkute</p>
                   <p className="text-sm text-gray-400">+91 9421608447</p>
-                  <p className="text-sm text-gray-400">info@bvcoe.edu</p>
+                  <p className="text-sm text-gray-400">shivammurkute20@gmail.com</p>
                 </div>
               </div>
             </div>

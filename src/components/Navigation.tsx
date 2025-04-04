@@ -3,19 +3,30 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
+import { useToast } from "@/components/ui/use-toast";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { toast } = useToast();
 
   const navItems = [
-    { name: "Home", href: "#hero", target: "_blank" },
-    { name: "Posts", href: "/Posts", target: "_blank" },
-    { name: "Gallery", href: "/Gallery", target: "_blank" },
-    { name: "Certificate", href: "Certificate", target: "_blank" },
-    { name: "FAQS", href: "Faqs", target: "_blank" },
-    { name: "Contact", href: "contact", target: "_blank" },
-    
+    { name: "Home", href: "/" },
+    { name: "Gallery", href: "/gallery", comingSoon: true },
+    { name: "Posts", href: "/posts", comingSoon: true },
+    { name: "Contact", href: "/contact", comingSoon: true }
   ];
+
+  const handleNavClick = (item: typeof navItems[0]) => {
+    if (item.comingSoon) {
+      toast({
+        title: "Coming Soon!",
+        description: `${item.name} page is under development. Check back later!`,
+        className: "animate-fade-in",
+      });
+      return;
+    }
+    setIsMenuOpen(false);
+  };
 
   return (
     <nav className="fixed w-full top-0 z-50 bg-quiz-dark/40 backdrop-blur-md border-b border-quiz-muted/50">
@@ -43,13 +54,14 @@ const Navigation = () => {
             />
             <div className="flex items-center space-x-3 lg:space-x-6">
               {navItems.map((item) => (
-                <a 
-                  key={item.name} 
-                  href={item.href}
-                  className="text-gray-300 hover:text-quiz-accent transition-colors text-sm lg:text-base"
+                <Link 
+                  key={item.name}
+                  to={item.href}
+                  className={`text-gray-300 hover:text-quiz-accent transition-colors text-sm lg:text-base ${item.comingSoon ? 'cursor-pointer' : ''}`}
+                  onClick={() => handleNavClick(item)}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -62,19 +74,19 @@ const Navigation = () => {
             </Button>
           </div>
         </div>
-        
+
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
           <div className="md:hidden py-4 flex flex-col items-center space-y-4">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-gray-300 hover:text-quiz-accent transition-colors py-2"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => handleNavClick(item)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         )}

@@ -5,17 +5,23 @@ import Rules from "@/components/Rules";
 import Location from "../components/Location";
 import Prize from "../components/Prize";
 import Footer from "../components/Footer";
-import Posts from "../components/Posts";
 import Theme from "../components/Theme";
+import Countdown from "../components/Countdown";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-quiz-background">
       <Navigation />
-      <Hero />
-      <Posts />
-      <Theme />
-      <About />
+      <div className="mb-8">
+        <Hero />
+      </div>
+      <Countdown />
+      <div className="mb-16 md:mb-24">
+        <Theme />
+      </div>
+      <div className="mt-8 md:mt-16">
+        <About />
+      </div>
       <Rules />
       <Location />
       <Prize />

@@ -8,12 +8,13 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#hero" },
-    { name: "Posts", href: "#posts" },
-    { name: "About", href: "#about" },
-    { name: "Rules", href: "#rules" },
-    { name: "Location", href: "#location" },
-    { name: "Prizes", href: "#prizes" },
+    { name: "Home", href: "#hero", target: "_blank" },
+    { name: "Posts", href: "/Posts", target: "_blank" },
+    { name: "Gallery", href: "/Gallery", target: "_blank" },
+    { name: "Certificate", href: "Certificate", target: "_blank" },
+    { name: "FAQS", href: "Faqs", target: "_blank" },
+    { name: "Contact", href: "contact", target: "_blank" },
+    
   ];
 
   return (

@@ -13,7 +13,7 @@ const Rules = () => {
     // Simulate download (in real app, replace with actual file URL)
     setTimeout(() => {
       const link = document.createElement('a');
-      link.href = '#'; // Replace with actual PDF URL
+      link.href = '../public/'; // Replace with actual PDF URL
       link.download = 'quiz_rulebook.pdf';
       document.body.appendChild(link);
       link.click();
@@ -22,14 +22,14 @@ const Rules = () => {
   };
 
   const rulesList = [
-    "Each team must consist of 3-4 members from the same college.",
+    "Each team must consist of 1-2 members from the same college.",
     "Participants must carry valid college ID cards on the day of the event.",
     "The quiz will have multiple rounds including written preliminaries and stage finals.",
     "Use of electronic devices during the competition is strictly prohibited.",
     "The quizmaster's decision will be final and binding in case of any disputes.",
-    "Registration fee is ₹500 per team (non-refundable).",
+    "Registration fee is ₹50 per team (non-refundable).",
     "Late registrations may be considered subject to availability.",
-    "All teams must report 30 minutes before the scheduled time."
+    "All teams must report 10 minutes before the scheduled time."
   ];
 
   return (
@@ -66,27 +66,27 @@ const Rules = () => {
 
           <div className="lg:w-1/2">
             <div className="quiz-card">
-              <h3 className="text-2xl font-bold mb-6">Round Format</h3>
+              <h3 className="text-2xl font-bold mb-6">FAQS</h3>
               
               <div className="space-y-6">
                 <div className="border-l-4 border-quiz-accent pl-4 py-2">
-                  <h4 className="text-lg font-bold text-quiz-accent">Preliminary Round</h4>
-                  <p className="text-gray-400 mt-1">Written quiz featuring 30 multiple-choice questions. Top 6 teams advance to the finals.</p>
+                  <h4 className="text-lg font-bold text-quiz-accent">Who can participate? </h4>
+                  <p className="text-gray-400 mt-1">Any one can participate with from any college.</p>
                 </div>
                 
                 <div className="border-l-4 border-quiz-accent pl-4 py-2">
-                  <h4 className="text-lg font-bold text-quiz-accent">Rapid Fire Round</h4>
-                  <p className="text-gray-400 mt-1">Quick-fire questions with 10 seconds per answer. Each correct answer earns 10 points.</p>
+                  <h4 className="text-lg font-bold text-quiz-accent">Size of Team Member? </h4>
+                  <p className="text-gray-400 mt-1">The size of the team can be of one member or two depends on you.</p>
                 </div>
                 
                 <div className="border-l-4 border-quiz-accent pl-4 py-2">
-                  <h4 className="text-lg font-bold text-quiz-accent">Audio-Visual Round</h4>
-                  <p className="text-gray-400 mt-1">Identify images, audio clips, and video snippets for 15 points per correct answer.</p>
+                  <h4 className="text-lg font-bold text-quiz-accent">Is the Quiz online?</h4>
+                  <p className="text-gray-400 mt-1">No, The quiz is offline in college (Bharati Vidyapeeth's College of Engineering Lavale Pune)</p>
                 </div>
                 
                 <div className="border-l-4 border-quiz-accent pl-4 py-2">
-                  <h4 className="text-lg font-bold text-quiz-accent">Buzzer Round</h4>
-                  <p className="text-gray-400 mt-1">First team to hit the buzzer gets to answer. +20 points for correct answers, -10 for incorrect.</p>
+                  <h4 className="text-lg font-bold text-quiz-accent">I have a question that isn't answered here. How can I contact you?</h4>
+                  <p className="text-gray-400 mt-1">Please visit our "Contact Us" page, where you will find our contact form or email address. Feel free to reach out to us with any further questions you may have.</p>
                 </div>
               </div>
             </div>

@@ -32,7 +32,7 @@ const Hero = () => {
               BVCOEL <span className="gradient-text">QUIZ</span> CHAMPIONSHIP
             </h1>
             <p className="text-base sm:text-lg text-gray-300 max-w-md mx-auto md:mx-0">
-              Test your knowledge, compete with the brightest minds, and win amazing prizes at our annual quiz competition.
+                 ⚠️ Warning: May cause excessive fun and knowledge gain. Proceed with curiosity 🚀
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <Button className="quiz-button group w-full sm:w-auto" asChild>

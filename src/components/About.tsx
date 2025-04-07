@@ -35,13 +35,13 @@ const About = () => {
     },
     {
       id: 2,
-      title: "Register Now",
+      title: "Register",
       image: "/b2.png"
     },
     {
       id: 3,
       title: "Special Round: Pop Culture Quiz",
-      image: "/b3.png"
+      image: "../public/b3.jpeg"
     },
   ];
 

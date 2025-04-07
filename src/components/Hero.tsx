@@ -11,8 +11,8 @@ const Hero = () => {
     
     // Create a link to the PDF file in the public folder
     const link = document.createElement('a');
-    link.href = '/QUIZZERS rule book..2-3.pdf'; // Path to the PDF in public folder
-    link.download = 'BVCOEL_QUIZ_RULEBOOK.pdf';
+    link.href = '/RuleBook.pdf'; // Path to the PDF in public folder
+    link.download = 'RuleBook.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -58,7 +58,7 @@ const Hero = () => {
                     </div>
                     <div className="ml-2 md:ml-3">
                       <p className="font-medium text-sm md:text-base">Registration Deadline</p>
-                      <p className="text-xs md:text-sm text-gray-400">April 16, 2024</p>
+                      <p className="text-xs md:text-sm text-gray-400">April 18, 2025</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -67,7 +67,7 @@ const Hero = () => {
                     </div>
                     <div className="ml-2 md:ml-3">
                       <p className="font-medium text-sm md:text-base">Quiz Date</p>
-                      <p className="text-xs md:text-sm text-gray-400">Coming soon..</p>
+                      <p className="text-xs md:text-sm text-gray-400">24 April 2025</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -76,7 +76,7 @@ const Hero = () => {
                     </div>
                     <div className="ml-2 md:ml-3">
                       <p className="font-medium text-sm md:text-base">Prize Distribution</p>
-                      <p className="text-xs md:text-sm text-gray-400">Coming soon...</p>
+                      <p className="text-xs md:text-sm text-gray-400">24 April 2025</p>
                     </div>
                   </li>
                 </ul>

@@ -7,9 +7,11 @@ const Countdown = () => {
     minutes: 0,
     seconds: 0
   });
+  
+  const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
-    const targetDate = new Date("April 16, 2025 00:00:00").getTime();
+    const targetDate = new Date("April 18, 2025 00:00:00").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -37,12 +39,16 @@ const Countdown = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const toggleMore = () => {
+    setShowMore(!showMore);
+  };
+
   return (
     <section className="py-6 md:py-12 bg-quiz-dark/50 backdrop-blur-sm">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-4 md:mb-6">
           <h2 className="text-xl md:text-3xl font-display font-bold mb-1 md:mb-2">Registration Deadline</h2>
-          <p className="text-sm md:text-base text-gray-300">April 16, 2025</p>
+          <p className="text-sm md:text-base text-gray-300">April 18, 2025</p>
         </div>
         
         <div className="grid grid-cols-2 sm:flex sm:justify-center gap-2 sm:gap-4 md:gap-8">
@@ -77,6 +83,91 @@ const Countdown = () => {
             </div>
             <span className="text-xs md:text-base text-gray-300 mt-1 md:mt-2">Seconds</span>
           </div>
+        </div>
+        
+        {/* Faculty and Student Coordinator Information */}
+        <div className="mt-8 md:mt-12 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+            <div className="bg-quiz-dark/30 backdrop-blur-sm border border-quiz-accent/20 rounded-lg p-4">
+              <h3 className="text-lg md:text-xl font-bold text-quiz-accent mb-2">Principal</h3>
+              <p className="text-gray-300">Dr. RN Patil</p>
+              <p className="text-sm text-gray-400">Principal of BVCOEL</p>
+            </div>
+            
+            <div className="bg-quiz-dark/30 backdrop-blur-sm border border-quiz-accent/20 rounded-lg p-4">
+              <h3 className="text-lg md:text-xl font-bold text-quiz-accent mb-2">Organizer</h3>
+              <p className="text-gray-300">Dr. Shikha Bhardwaj</p>
+              <p className="text-sm text-gray-400">HOD of First Year</p>
+            </div>
+          </div>
+          
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+            <div className="bg-quiz-dark/30 backdrop-blur-sm border border-quiz-accent/20 rounded-lg p-4">
+              <h3 className="text-lg md:text-xl font-bold text-quiz-accent mb-2">Faculty Co-Ordinator</h3>
+              <p className="text-gray-300">Kiran Jadav</p>
+              <p className="text-sm text-gray-400">Teacher at BVCOEL</p>
+            </div>
+            
+            {/* More Button - Same size as Faculty Co-Ordinator card */}
+            <button 
+              onClick={toggleMore}
+              className="bg-quiz-dark/30 backdrop-blur-sm border border-quiz-accent/20 rounded-lg p-4 flex flex-col items-center justify-center hover:bg-quiz-accent/10 transition-colors"
+            >
+              <h3 className="text-lg md:text-xl font-bold text-quiz-accent mb-2">More</h3>
+              <p className="text-gray-300">{showMore ? "Show Less" : "Show More"}</p>
+              <p className="text-sm text-gray-400">Click to {showMore ? "hide" : "view"} student coordinators</p>
+            </button>
+          </div>
+          
+          {/* Additional Information (Hidden by default) */}
+          {showMore && (
+            <div className="mt-6">
+              <h3 className="text-xl md:text-2xl font-bold text-quiz-accent mb-4">Student Organizers</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <div className="bg-quiz-dark/30 backdrop-blur-sm border border-quiz-accent/20 rounded-lg p-4">
+                  <h3 className="text-lg md:text-xl font-bold text-quiz-accent mb-2">Student Co-Ordinator</h3>
+                  <p className="text-gray-300">Om Narkhede</p>
+                  <p className="text-sm text-gray-400">Tech Management</p>
+                </div>
+                
+                <div className="bg-quiz-dark/30 backdrop-blur-sm border border-quiz-accent/20 rounded-lg p-4">
+                  <h3 className="text-lg md:text-xl font-bold text-quiz-accent mb-2">Student Organizer</h3>
+                  <p className="text-gray-300">Shivam Murkute</p>
+                  <p className="text-sm text-gray-400">Management and Marketing</p>
+                </div>
+                
+                <div className="bg-quiz-dark/30 backdrop-blur-sm border border-quiz-accent/20 rounded-lg p-4">
+                  <h3 className="text-lg md:text-xl font-bold text-quiz-accent mb-2">Student Organizer</h3>
+                  <p className="text-gray-300">Sannidhya vyas</p>
+                  <p className="text-sm text-gray-400">Management and Marketing</p>
+                </div>
+                
+                <div className="bg-quiz-dark/30 backdrop-blur-sm border border-quiz-accent/20 rounded-lg p-4">
+                  <h3 className="text-lg md:text-xl font-bold text-quiz-accent mb-2">Student Organizer</h3>
+                  <p className="text-gray-300">Swayam polakhare</p>
+                  <p className="text-sm text-gray-400">Social Media Management</p>
+                </div>
+                
+                <div className="bg-quiz-dark/30 backdrop-blur-sm border border-quiz-accent/20 rounded-lg p-4">
+                  <h3 className="text-lg md:text-xl font-bold text-quiz-accent mb-2">Student Organizer</h3>
+                  <p className="text-gray-300">Ayush Jaju</p>
+                  <p className="text-sm text-gray-400">Social Media Management</p>
+                </div>
+                
+                <div className="bg-quiz-dark/30 backdrop-blur-sm border border-quiz-accent/20 rounded-lg p-4">
+                  <h3 className="text-lg md:text-xl font-bold text-quiz-accent mb-2">Student Organizer</h3>
+                  <p className="text-gray-300">Adarsh Chavan</p>
+                  <p className="text-sm text-gray-400">Task Execution</p>
+                </div>
+                
+                <div className="bg-quiz-dark/30 backdrop-blur-sm border border-quiz-accent/20 rounded-lg p-4">
+                  <h3 className="text-lg md:text-xl font-bold text-quiz-accent mb-2">Student Organizer</h3>
+                  <p className="text-gray-300">Harshal Patil</p>
+                  <p className="text-sm text-gray-400">Task Execution</p>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>

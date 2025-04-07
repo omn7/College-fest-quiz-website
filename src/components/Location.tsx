@@ -62,8 +62,8 @@ const Location = () => {
                     <div>
                       <h4 className="font-bold">Timings</h4>
                       <p className="text-gray-400">Registration: Started</p>
-                      <p className="text-gray-400">Event Start: soon</p>
-                      <p className="text-gray-400">Event End: soon</p>
+                      <p className="text-gray-400">Event Start: 12:30 PM</p>
+                      <p className="text-gray-400">Event End: 4:30 PM</p>
                     </div>
                   </div>
                 </div>

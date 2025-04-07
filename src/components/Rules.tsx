@@ -13,8 +13,8 @@ const Rules = () => {
     // Simulate download (in real app, replace with actual file URL)
     setTimeout(() => {
       const link = document.createElement('a');
-      link.href = '../public/'; // Replace with actual PDF URL
-      link.download = 'quiz_rulebook.pdf';
+      link.href = '../public/Rulebook.pdf'; // Replace with actual PDF URL
+      link.download = 'RuleBook.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

@@ -97,15 +97,15 @@ const Countdown = () => {
             <div className="bg-quiz-dark/30 backdrop-blur-sm border border-quiz-accent/20 rounded-lg p-4">
               <h3 className="text-lg md:text-xl font-bold text-quiz-accent mb-2">Organizer</h3>
               <p className="text-gray-300">Dr. Shikha Bhardwaj</p>
-              <p className="text-sm text-gray-400">HOD of First Year</p>
+              
             </div>
           </div>
           
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
             <div className="bg-quiz-dark/30 backdrop-blur-sm border border-quiz-accent/20 rounded-lg p-4">
               <h3 className="text-lg md:text-xl font-bold text-quiz-accent mb-2">Faculty Co-Ordinator</h3>
-              <p className="text-gray-300">Kiran Jadav</p>
-              <p className="text-sm text-gray-400">Teacher at BVCOEL</p>
+              <p className="text-gray-300">Prof. Kiran Jadav</p>
+              
             </div>
             
             {/* More Button - Same size as Faculty Co-Ordinator card */}

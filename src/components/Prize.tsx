@@ -1,4 +1,4 @@
-import { Trophy } from "lucide-react";
+import { Trophy, Medal, Award } from "lucide-react";
 
 const Prize = () => {
   return (
@@ -11,15 +11,58 @@ const Prize = () => {
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {/* First Prize */}
           <div className="quiz-card relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-quiz-accent/5 to-quiz-highlight/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <div className="relative p-12 text-center">
-              <div className="bg-quiz-accent/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-8">
-                <Trophy className="h-10 w-10 text-quiz-accent" />
+            <div className="relative p-8 text-center">
+              <div className="bg-quiz-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Trophy className="h-8 w-8 text-quiz-accent" />
               </div>
-              <h3 className="text-3xl font-bold mb-6">Coming Soon</h3>
-              <p className="text-xl text-gray-400">Stay tuned for exciting prizes and rewards</p>
+              <h3 className="text-2xl font-bold mb-4">1st Place</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li>Trophy</li>
+                <li>Certificate of Excellence</li>
+                <li>Medal</li>
+                <li>Exciting prizes</li>
+             
+              </ul>
+            </div>
+          </div>
+
+          {/* Second Prize */}
+          <div className="quiz-card relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-br from-quiz-accent/5 to-quiz-highlight/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="relative p-8 text-center">
+              <div className="bg-quiz-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Medal className="h-8 w-8 text-quiz-accent" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">2nd Place</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li>Silver Trophy</li>
+                <li>Certificate of Achievement</li>
+                <li>Silver Medal</li>
+                <li>Exciting prizes</li>
+                
+              </ul>
+            </div>
+          </div>
+
+          {/* Third Prize */}
+          <div className="quiz-card relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-br from-quiz-accent/5 to-quiz-highlight/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="relative p-8 text-center">
+              <div className="bg-quiz-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Award className="h-8 w-8 text-quiz-accent" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">3rd Place</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li>Bronze Trophy</li>
+                <li>Certificate of Merit</li>
+                <li>Bronze Medal</li>
+                <li>Exciting prizes</li>
+                
+              </ul>
             </div>
           </div>
         </div>

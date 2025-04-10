@@ -40,8 +40,8 @@ const About = () => {
     },
     {
       id: 3,
-      title: "Special Round: Pop Culture Quiz",
-      image: "../public/b3.jpeg"
+      title: "Official Poster",
+      image: "/b3.jpeg"
     },
   ];
 

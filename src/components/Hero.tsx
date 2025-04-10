@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, MessageCircle } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 const Hero = () => {
@@ -42,6 +42,11 @@ const Hero = () => {
               </Button>
               <Button className="quiz-button-outline flex items-center w-full sm:w-auto text-sm md:text-base" onClick={handleDownloadRules}>
                 <Download className="mr-2 h-3 w-3 md:h-4 md:w-4" /> Rule Book
+              </Button>
+              <Button className="quiz-button-outline flex items-center w-full sm:w-auto text-sm md:text-base" asChild>
+                <a href="https://chat.whatsapp.com/JpP8m4xSB8HFm9ZoFhf6T2" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="mr-2 h-3 w-3 md:h-4 md:w-4" /> Join WhatsApp Group
+                </a>
               </Button>
             </div>
           </div>
